@@ -1,0 +1,189 @@
+:root{
+    --background-color:linear-gradient(to left, #243949 0%, #517fa4 100%);
+    --light-blue-color: #BFD2D9;
+    --black-color:#000000;
+    --gray-color:#B3B3B3;
+    --sidebar-color:rgba(21, 29, 41, 0.637);
+    --poweredby-color: #888;
+    --download-color:#DCDCDC;
+    --fontfamily:'Balsamiq Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--background-color);
+    font-family: 'Balsamiq Sans', sans-serif;
+    
+}
+.container{
+    display:flex;
+    height: 100vh;
+
+}
+.sidebar{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sidebar-color);
+    width: 20%;
+    overflow: scroll;
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+.side-bar-header{
+    display: flex;
+    height: 10%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:inherit;
+    flex-wrap: wrap;
+    }
+.side-bar-header h1{
+    margin-left: 0.7rem;
+    flex: 0.7;
+    align-content: flex-start;
+    font-size: 2vw;
+    color: var(--light-blue-color);
+
+}
+.side-bar-header img{
+    padding-bottom: 0.5rem;
+    height: 3vw;
+    
+}
+
+.side-bar-content{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content:flex-start;
+align-items: center;
+height: 80%;
+flex-wrap:wrap;
+}
+
+.side-bar-content button{
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-size: medium;
+    border: none;
+    margin-top: 1.5rem;
+    background-color: transparent;
+    border-radius: 12px;
+    height: 8%;
+    width: 80%;
+    font-size: 1vw;
+    color: white;
+    size-adjust:inherit;
+}
+.side-bar-content button:hover{
+    background-color: var(--light-blue-color);
+    color: #000;
+    font-size: 1.2vw;
+}
+
+.side-bar-footer{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.1rem;
+    
+}
+.side-bar-footer p{
+    
+    color: var(--poweredby-color);
+    
+}
+.contents{
+display: flex;
+flex-direction: column;
+width: 100%
+    
+}
+.header{
+display: flex;
+height: 11.3%;
+flex-direction: row-reverse;
+align-items: center;
+}
+.header button{
+    border: 0;
+    background-color: var(--gray-color);
+    margin-right: 3vh;
+    width: 2.5vw;
+    height: 2.5vh;
+    border-radius: 50%;
+    font-family: var(--fontfamily);
+    font-size: 1.5vh;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+}
+.content::-webkit-scrollbar{
+    display: none;
+
+}
+.content h2{
+    color: white;
+    padding-left: 5rem;
+    height: 13%;
+    align-content: center;
+    font-size: 1.5vw;
+}
+.modules-tags{
+    flex: 1;
+    padding-left: 5rem;
+    display: flex;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+
+}
+.modules-tags card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue-color);
+    height: 50vh;
+    width: 15vw;
+    border-radius: 10px;
+}
+.image{ 
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.fisheries-logo{
+    flex: 1;
+    margin-bottom: 0.3rem;
+    height: 100%;
+    width: 100%;
+}
+.download-logo{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    justify-content:center;
+    
+}
+.download-logo img{
+    align-self: center;
+}
+.download-logo h6{
+    font-size: 2vh;
+color: var(--download-color);
+text-align: center;
+}
