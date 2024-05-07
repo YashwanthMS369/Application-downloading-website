@@ -1,0 +1,121 @@
+:root{
+    --background-color:linear-gradient(to left, #243949 0%, #517fa4 100%);
+    --light-blue-color: #BFD2D9;
+    --black-color:#000000;
+    --gray-color:#B3B3B3;
+    --sidebar-color:rgba(21, 29, 41, 0.637);
+    --poweredby-color: #888;
+    --download-color:#DCDCDC;
+    --fontfamily:'Balsamiq Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--background-color);
+    font-family: 'Balsamiq Sans', sans-serif;
+    
+}
+.container{
+    display:flex;
+    height: 100vh;
+   flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%
+}
+
+.side-bar-header{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:inherit;
+    flex-wrap: wrap;
+    }
+.side-bar-header h1{
+    margin-left: 0.7rem;
+   
+    align-content: flex-start;
+    font-size: 50px;
+    color: var(--light-blue-color);
+
+}
+.side-bar-header img{
+    padding-bottom: 0.5rem;
+    height: 80px;
+    
+}
+.SignIn {
+display: flex;
+flex-direction: column;
+}
+
+.signin-header{
+text-align: center;
+margin-top: 30px;
+color: white;
+}
+.signin-header h1{
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight:lighter
+}
+.signin-header p{
+    font-size:15px;
+    font-weight:lighter
+}
+.signin-inputfield{
+    margin-top: 50px;
+   text-align: center;
+   
+}
+.signin-inputfield input{
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: var(--light-blue-color);
+    font-family: var(--fontfamily);
+    font-size: 20px;
+    padding: 5px 15px;
+    color: black;
+}
+.signin-inputfield #password{
+    margin-bottom: 10px;
+}
+.forgot-password{
+    background-color: transparent;
+    border: none;
+    color: var(--light-blue-color);
+    font-family: var(--fontfamily);
+    margin-left: 220px;
+    font-size: 12px;
+}
+.forgot-password:hover{
+    color: var(--light-blue-color);
+    font-size: 15px;
+}
+.signIn-button{
+    align-self: center;
+    height: 50px;
+    width: 333px;
+    margin: 20px 30px;
+    border-radius: 15px;
+    font-family: var(--fontfamily);
+    font-size: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    background-color: #0e374b;
+}
+.signIn-button:hover{
+    background-color: #06162F;
+    font-size: large;
+}
+
